@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>loan-form</title>
+        <link rel="stylesheet" href="loan.css" type="text/css">
+        <link rel="stylesheet" type="text/css" href="mainPage.css">
+        <link rel="stylesheet" type="text/css" href="nav_logo.css">
+
+        <script type = "text/javascript">
+            function validateForm(){
+            var name=document.getElementById("name").value;
+            var acno=document.getElementById("acno").value;
+            var type=document.getElementById("type").value;
+            var pino=document.getElementById("pino").value;
+            var gender=document.getElementById("gender").value;
+            var inc=document.getElementById("inc").value;
+            var mail=document.getElementById("email").value;
+            var occ=document.getElementById("occ").value;
+            var pno=document.getElementById("pno").value;
+            var resid=document.getElementById("resid").value;
+            var at = mail.indexOf("@");
+            var dot = mail.lastIndexOf(".");
+            var e = document.getElementById("loan");
+            var strUser = e.options[e.selectedIndex].value;
+            var strUser1 = e.options[e.selectedIndex].text;
+            if(name=="")
+            {
+                document.getElementById("namee").innerHTML="**Fill this**";
+                return false;
+            }
+            else{
+                document.getElementById("namee").innerHTML="";
+            }
+            if(acno=="")
+            {
+                document.getElementById("acnoo").innerHTML="**Fill this**";
+                return false;
+            }
+            else{
+                document.getElementById("acnoo").innerHTML="";
+            }
+            if(document.getElementByname('type').checked == true) {   
+                document.getElementById("typee").innerHTML="**Fill this**";
+                return false;
+            }
+            else{
+                document.getElementById("typee").innerHTML="";
+            }
+            if(pino=="")
+            {
+                document.getElementById("pinoo").innerHTML="**Fill this**";
+                return false;
+            }
+            else{
+                document.getElementById("pinoo").innerHTML="";
+            }
+            if(strUser==0){
+                document.getElementById("loann").innerHTML="**Fill this**";
+            return false;
+            }
+            else{
+                document.getElementById("loann").innerHTML="";
+            }
+           if(document.getElementByname('gender').checked == true) {   
+                document.getElementById("gendere").innerHTML="**Fill this**";
+                return false;
+            }
+            else{
+                document.getElementById("gendere").innerHTML="";
+            }
+            if(document.getElementByname('inc').checked == true) {   
+                document.getElementById("incc").innerHTML="**Fill this**";
+                return false;
+            }
+            else{
+                document.getElementById("incc").innerHTML="";
+            }
+            if(mail=="")
+            {
+                document.getElementById("emaile").innerHTML="**Fill this**";
+                return false;
+            }
+            else if (at< 1 || ( (dot - at) < 2 )) {
+               document.getElementById("emaile").innerHTML="**Please enter correct emailID**";
+               return false;
+             }
+            else{
+                document.getElementById("emaile").innerHTML="";
+            }
+            if(document.getElementByname('occ').checked == true) {   
+                document.getElementById("occc").innerHTML="**Fill this**";
+                return false;
+            }
+            else{
+                document.getElementById("occc").innerHTML="";
+            }
+
+            if(mobile=="")
+            {
+                document.getElementById("pnoe").innerHTML="**Fill this**";
+                return false;
+            }
+            else if ((mobile>1000000000 && mobile<10000000000)) {
+               document.getElementById("pnoe").innerHTML="";
+                }
+            else{
+                document.getElementById("pnoe").innerHTML="**phone number should be 10 digits**";
+            }
+            if(resid=="")
+            {
+                document.getElementById("reside").innerHTML="**Fill this**";
+                return false;
+            }
+            else{
+                document.getElementById("reside").innerHTML="";
+            }
+            if(lar=="")
+            {
+                document.getElementById("lare").innerHTML="**Fill this**";
+                return false;
+            }
+            else{
+                document.getElementById("lare").innerHTML="";
+                alert("signup successful");
+                return true;
+1            }               
+           }                         
+           </script>
+           <script>
+            function onlyNumberKey(evt)
+            {
+            var ASCIICode=evt.keyCode;
+            if (ASCIICode < 48 || ASCIICode > 57)
+            {return false;}
+            return true;
+            }
+            function onlyAlphaKey(evt)
+            {
+            var ASCIICode=evt.keyCode;
+            if ((ASCIICode >= 65 && ASCIICode <= 90) || (ASCIICode >= 97 && ASCIICode <= 122) || (ASCIICode==32))
+            {return true;}
+            return false;
+            }
+           </script>
+           <script>
+            function reload(){
+                window.location.reload();
+            }
+           </script>
+    </head>
+    <body><body >
+        <div id="wrap">
+            <div id="top">
+                <a href="mainPage.html"><img src="LOGO.PNG" height="100px" width="100px" style="border:0px; text-decoration:none;"></a>
+                <a href="mainPage.html"><img src="LOGO_name.PNG" height="100px" width="300px" style="border:0px; text-decoration:none;"></a>
+                
+                <div id="display_user" style="float:right;">
+                    <p id="welcome_user" style="margin-top:85px;margin-right:50px;"></p>
+                </div>
+            </div>
+            <div id="nav" style="height: 50px;">
+                <div id="nav_bar" style="margin-top: 10px;">
+                    <ul>
+                        <li><a href="mainPage.html">&nbsp;Home&nbsp;</a></li>
+                        <li><a href="#">&nbsp;Services&nbsp;</a>
+                            <ul id="sub_menu_services">
+                                <li><a href="user.html">&nbsp;Account&nbsp;</a></li>
+                                <li><a href="new_transferfinal_web.html">&nbsp;Trasactions&nbsp;</a></li>
+                                <li><a href="new_billfinal_web.html">&nbsp;Bill Payment&nbsp;</a></li>
+                                <li><a href="loan form.html">&nbsp;Loans&nbsp;</a></li>
+                            </ul>
+                        </li>
+                        
+                       
+
+                    </ul>
+                </div>
+                <div id="general_info" style="margin-top: 10px;">
+                    <ul>
+                        <li><a href="faq.html">&nbsp;FAQ&nbsp;</a></li>
+                        <li style="color:black;">|</li>
+                        <li><a href="customer_care.html">&nbsp;Customer Care&nbsp;</a></li>
+                        <li style="color:black;">|</li>
+                        <li><a href="about.html">&nbsp;About&nbsp;</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        
+        <div  name="loan" id="loan"><form method ="post" action="loan form.php"  onsubmit="return validateForm()">
+        <table  cellpadding="9" align="center"><tr><h1><center></center> </h1></tr><tr></tr>        
+        <tr><td><label>Name(as on aadhar card)<a style=color:red;> *</a>     :</label></td><td><input type ="text"  id="name"  onkeypress="return onlyAlphaKey(event)" ><span  id="namee" style="color: red; font-size: 18px;"></span></td></tr>
+        <tr><td><label>Account number<a style=color:red;> *</a>      :</label></td><td><input type ="text"  id="acno" onkeypress="return onlyNumberKey(event)" ><span  id="acnoo" style="color: red; font-size: 18px;"></span></td></tr>
+        <tr><td><label>Customer ID<a style=color:red;>*</a>:</label>&nbsp;&nbsp;&nbsp;</td>  <td><input type ="text"  id="cus" name="customerid" onkeypress="return onlyNumberKey(event)" ><span  id="cus" style="color: red; font-size: 18px;"></span></td></tr> 
+        <tr><td><label>Address   <a style=color:red;>*</a>       :</label></td><td><input type ="text" id="name"  ></td></tr>
+        <tr><td><label>Zip code<a style=color:red;> *</a>      :</label></td><td><input type ="text"  id="pino"  onkeypress="return onlyNumberKey(event)" ><span  id="pinoo" style="color: red; font-size: 18px;"></span></td></tr>
+        <tr><td><label>Type of loan <a style=color:red;>*</a>:</td><td><select id="loan_size" name="loantype"><span  id="loann" style="color: red; font-size: 18px;"></span>
+            <option value="none" >none</option>
+            <option value="personal loan">Personal loan</option>
+            <option value="home loan">Home loan</option>
+            <option value="bussiness loan">Educational loan</option>
+            <option value="vehicle loan">Vehicle loan</option>
+        <tr><td><label>Gender <a style=color:red;>*</a>:</label>&nbsp;&nbsp;&nbsp;</td>
+        <td><input type ="radio" name="2"  id="gender" value="M">&nbsp; <span >Male</span>&nbsp;&nbsp;&nbsp;         
+        <input type ="radio"name="2"  id="gender" value="F">&nbsp; <span >Female</span>&nbsp;&nbsp;&nbsp;<span  id="gendere" style="color: red; font-size: 18px;"></span></td></tr>
+        <tr><td><label>annual income <a style=color:red;>*</a>      :</label>&nbsp;&nbsp;&nbsp;</td><td><input type ="text"  id="inc" onkeypress="return onlyNumberKey(event)" ><span  id="incc" style="color: red; font-size: 18px;"></span></td></tr>    
+        <tr><td><label>Email<a style=color:red;> *</a>          :</label></td><td><input name ="text" id="email"  ><span  id="emaile" style="color: red;font-size: 18px;"></span></td></tr>
+        <tr><td><label>Occupation <a style=color:red;>*</a>:</label>&nbsp;&nbsp;&nbsp;</td>
+            <td><input type ="radio" id="occ" >&nbsp; <span >Salaried(in private sector)</span>&nbsp;&nbsp;&nbsp;<span  id="occc" style="color: red; font-size: 18px;"></span></td></tr>
+            <tr><td></td><td><input type ="radio" id="occ" >&nbsp; <span >Self employement</span>&nbsp;&nbsp;&nbsp;</td></tr>
+            <tr><td></td><td><input type ="radio" id="occ" >&nbsp; <span >Bussiness</span>&nbsp;&nbsp;&nbsp;</td></tr>        
+            <tr> <td></td><td><input type ="radio" id="occ" >&nbsp; <span >Salaried(in governmant sector)</span>&nbsp;&nbsp;&nbsp;</td></tr>
+            <tr> <td></td><td><input type ="radio" id="occ" >&nbsp; <span >Others</span>&nbsp;&nbsp;&nbsp;</td></tr>
+            <tr><td><label>Phone<a style=color:red;> *</a>      :</label></td><td><input type ="text"  id="pno" onkeypress="return onlyNumberKey(event)" ><span  id="pnoe" style="color: red; font-size: 18px;"></span></td></tr>
+            <tr><td><label>loan amount required<a style=color:red;> *</a>          :</label></td><td><input type ="text" id="lar" name="loanamount" ></td><span  id="lare" style="color: red; font-size: 18px;"></span></tr> 
+                <tr><td><label><input type="submit" id="submit" name="Submit" value="Submit"  /></label></td>
+                <td><input type="button" id="clear" name="Clear" value="Clear"  onclick="reload()"/></td></tr>
+
+                                    </table></div> 
+                    </form>
+            </div>
+    </body>
+</html>

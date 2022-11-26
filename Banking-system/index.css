@@ -1,0 +1,260 @@
+:root{
+	--transWhite: #fdfdfd5c;
+	--themeBlue: #013781;
+	--themeGreen: #0f44a7;
+	--themeOrangeSelect: #c00202;
+	--offWhite: #09338f;
+	--offBlack: #313131;
+	--shapeShadow: 1px 2px 10px #00000078;
+}
+
+body{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+body div, section, article, header, button{
+	box-sizing: border-box;
+}
+
+a{
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+}
+
+button{
+	border: none;
+	box-shadow: var(--shapeShadow);
+}
+
+h2.secHeading{
+	color: var(--themeBlue);
+	font-size: 2em;
+}
+
+button.viewAll{
+	padding: 0.5em;
+	background-color: var(--themeBlue);
+	font-size: 1.5em;
+	color: white;
+}
+
+button.viewAll:hover{
+	background-color: var(--themeGreen);
+}
+
+/*-----------------------------------------------------------------------------------------------------
+-------------------------------------------Hero Image--------------------------------------------------
+-------------------------------------------------------------------------------------------------------*/
+section.hero{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("index_bg.jpg");
+ background-size: 100%; 
+ background-attachment:fixed;
+	position: relative;
+}
+
+section.hero div.hero-text{
+	color: var(--transWhite);
+	position: absolute;
+	top: 30%;
+	text-align: center;
+}
+
+section.hero div.hero-text h2{
+	font-size: 4em;
+	font-family: 'Dancing Script', cursive;
+}
+
+section.hero div.hero-text p{
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5em;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------
+-------------------------------------------Header------------------------------------------------------
+-------------------------------------------------------------------------------------------------------*/
+header{
+	background-color: var(--transWhite);
+	padding:  1em;
+	margin: 0;
+	width: 100%;
+	height: 15vh;
+	display: flex;
+	align-items: center;
+}
+
+/*---------------------------------------H1-------------------------------------------------------------*/
+
+header h1{
+	margin: 0;
+	font-size: 2.5em;
+	padding-left: 0.5em;
+	flex: 10%;
+}
+
+header h1 a{
+	color: white;
+}
+
+
+/*--------------------------------------Login Section------------------------------------------------------*/
+
+header section#login{
+	padding-right: 2em;
+	flex: 15%;
+	margin: 0;
+	display: flex;
+	justify-content: flex-end;
+}
+
+header section#login a{
+	color: white;
+	font-size: 1.5em;
+	padding: 0.2em 0.5em;
+	margin-right: 0.5em;
+}
+
+header section#login a#login{
+	background-color: var(--themeGreen);
+	box-shadow: var(--shapeShadow);
+}
+
+header section#login a#login:hover{
+	background-color: white;
+	border: solid 2px var(--themeGreen);
+	color: var(--themeGreen);
+}
+
+header section#login a#signup{
+	color: white;
+}
+
+header section#login a#signup:hover{
+	color: var(--themeGreen);
+	text-decoration: underline;
+}
+
+/*------------------------------------------------------------------------------------------------
+--------------------------------------------Counters----------------------------------------------
+--------------------------------------------------------------------------------------------------*/
+.counters{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 36vh;
+    padding-bottom: 50px;
+    color: teal;
+}
+.container2{
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+}
+.counters .container2{
+    display: grid;
+    grid-gap: 90px;
+    grid-template-columns: repeat(5, 1fr) ;
+    text-align: center;
+}
+.counters i{
+    margin-bottom: 5px;
+}
+.counters .counter{
+    font-size: 45px;
+    margin: 5px 0;
+}
+@media(max-width: 700px){
+    .counters .container2{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .counters .container2 > div:nth-of-type(1),.counters .container2 > div:nth-of-type(2){
+        border-bottom: 1px lightskyblue solid;
+        padding-bottom: 20px;
+    }
+}
+
+section.counters{
+	margin-top: 50px;
+	color: var(--themeGreen);
+}
+
+/*---------------------------------------------Footer---------------------------------------------*/
+
+.footer{
+    background: #303036;
+    color: #d3d3d3;
+    height: 400px;
+    position: relative;
+}
+.footer .footer-content{
+    height: 350px;
+    display: flex;
+}
+.footer .footer-content .footer-section{
+    flex: 1;
+    padding: 25px;
+}
+.footer .footer-content h1,
+.footer .footer-content h2{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+.footer .footer-content .about h1 span{
+    color: var(--themeGreen);
+}
+.footer .footer-content .about .contact span{
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+.footer .footer-content .about .socials a{
+    border: 1px solid gray;
+    width: 45px;
+    height: 41px;
+    padding-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    color: gray;
+    transition: all .3s;
+}
+.footer .footer-content .about .socials a:hover{
+    border: 1px solid white;
+    color: #fff;
+    transition: all .3s;
+}
+.footer .footer-content .links ul a{
+    color: gray;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+.footer .footer-content .links ul a:hover{
+    color: white;
+    margin-left: 15px;
+    transition: all .3s;
+}
+.footer .footer-bottom{
+    background: #343a40;
+    color: #686868;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 10px;
+}
+
+
+
+

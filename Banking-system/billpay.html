@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" type="text/css" href="mainPage.css">
+        <link rel="stylesheet" type="text/css" href="nav_logo.css">
+        <link rel="stylesheet" type="text/css" href="LoginForm.css">
+    </head>
+    <body style="background: url(https://cdn.discordapp.com/attachments/862331232409878548/917849375907147846/shapelined-_JBKdviweXI-unsplash.jpg); background-size: 100%;">
+    
+    </style>
+        <div id="wrap">
+            <div id="top">
+                <a href="#"><img src="LOGO.PNG" height="100px" width="100px" style="border:0px; text-decoration:none;"></a>
+                <a href="#"><img src="LOGO_name.PNG" height="100px" width="300px" style="border:0px; text-decoration:none;"></a>
+                
+                <div id="display_user" style="float:right;">
+                    <p id="welcome_user" style="margin-top:85px;margin-right:50px;"></p>
+                </div>
+            </div>
+            <div id="nav" style="height: 50px;">
+                <div id="nav_bar" style="margin-top: 10px;">
+                    <ul>
+                        <li><a href="mainPage.html">&nbsp;Home&nbsp;</a></li>
+                        <li><a href="#">&nbsp;Services&nbsp;</a>
+                            <ul id="sub_menu_services">
+                                <li><a href="user.html">&nbsp;Account&nbsp;</a></li>
+                                <li><a href="new_transferfinal_web.html">&nbsp;Trasactions&nbsp;</a></li>
+                                <li><a href="new_billfinal_web.html">&nbsp;Bill Payment&nbsp;</a></li>
+                                <li><a href="loan form.html">&nbsp;Loans&nbsp;</a></li>
+
+                            </ul>
+                        </li>
+                        
+                       
+
+                    </ul>
+                </div>
+                <div id="general_info" style="margin-top: 10px;">
+                    <ul>
+                        <li><a href="faq.html">&nbsp;FAQ&nbsp;</a></li>
+                        <li style="color:black;">|</li>
+                        <li><a href="customer_care.html">&nbsp;Customer Care&nbsp;</a></li>
+                        <li style="color:black;">|</li>
+                        <li><a href="about.html">&nbsp;About&nbsp;</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+       <br><br><br>
+       <h2 style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif"><b><u>PAY BILL</u></b></h2>
+       <table  style="border: solid 1px #24231d; background-color:cornsilk;" align="center">
+        <tr>
+            <td>
+    <div class="signup" ><form action="billpay.php" method="post">
+                 
+                            <table cellpadding="9"><tr></tr><tr><center><h2></h2></center></tr>     
+                                <div class="cardnumber"> <tr><td style="font-size: large;"><label>Account ID       :</label></td><td><input type ="test" name ="acc" id="cnumber" placeholder="Pleace enter your account number" ></td></tr></div>   
+                            <div class="cardnumber"> <tr><td style="font-size: large;"><label>Card Number       :</label></td><td><input type ="test" name ="cardnum" id="cnumber" placeholder="Pleace enter your credit card number" ></td></tr></div>
+                            <tr><td style="font-size: large;"><label>Card Holder name        :</label></td><td><input type ="test" name ="holder" id="cname" placeholder="Please enter the name of the credit card holder" style="max-width: 30;"></td></tr>
+                            <tr><td style="font-size: large;"><label>Expiry date </label></td><td><input type ="date" name ="date" id="name" placeholder="Enter the expiry date" ></td></tr>
+                    
+        
+                            <tr><td style="font-size: large;"><label>CVC  :</label></td><td><input type ="test" name ="ccv" id="cvc" placeholder="enter the CVC" ></td></tr>
+                  <!----        <tr><td style="font-size: large;"><label>ORDER ID  :</label></td><td><input type ="test" name ="ord" id="ord" ></td></tr>-->
+                            <tr><td style="font-size: large;">
+                            <label>Type</label>
+                            <select name="country" >
+                                <option selected="" value="Default">
+                            (Please select the type of bill payment)
+                                </option>
+                                <option value="AF">Electricity bill</option>
+                                <option value="AL">Mobile/DTH Recharge</option>
+                                <option value="DZ">Credit card bill</option>
+                             
+                            </select>
+                            <tr><td style="font-size: large;"><label>Amount  :</label></td><td><input type ="test" name ="amount" id="amount" placeholder="enter the amount" ></td></tr>
+                            <tr><td><label><input type="submit" id="submit" name="Submit" value="Submit"  /></label></td>
+                                <td><input type="button" id="clear" name="Clear" value="clear" /></td></tr>
+                            </form>
+                            </div>
+                            </table>
+           
+        
+    </body>
+</html>

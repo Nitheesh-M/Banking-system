@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <title>user detail update</title>
+        <link rel="stylesheet" href="userdetailup.css" type="text/css">
+        <link rel="stylesheet" type="text/css" href="mainPage.css">
+        <link rel="stylesheet" type="text/css" href="nav_logo.css">
+        <link rel="stylesheet" type="text/css" href="LoginForm.css">
+
+        <script type="text/javascript">
+            function validateForm(){
+            var name=document.getElementById("name").value;;
+            var pino=document.getElementById("pino").value;
+            var mail=document.getElementById("email").value;
+            var pno=document.getElementById("pno").value;
+            var at=mail.indexOf("@");
+            var dot=mail.lastIndexOf(".");
+            if(name=="")
+            {
+                document.getElementById("namee").innerHTML="**Fill this**";
+                return false;
+            }
+            else{
+                document.getElementById("namee").innerHTML="";
+            }
+
+            if(pino=="")
+            {
+                document.getElementById("pinoo").innerHTML="**Fill this**";
+                return false;
+            }
+            else{
+                document.getElementById("pinoo").innerHTML="";
+            }
+            if(mail=="")
+            {
+                document.getElementById("emaile").innerHTML="**Fill this**";
+                return false;
+            }
+            else if (at< 1 || ( (dot - at) < 2 )) {
+               document.getElementById("emaile").innerHTML="**Please enter correct emailID**";
+               return false;}
+            else{
+                document.getElementById("emaile").innerHTML="";
+            }
+
+            if(mobile=="")
+            {
+                document.getElementById("pnoe").innerHTML="**Fill this**";
+                return false;
+            }
+            else if ((mobile>1000000000 && mobile<10000000000)) {
+               document.getElementById("pnoe").innerHTML="";
+                }
+            else{
+                document.getElementById("pnoe").innerHTML="**phone number should be 10 digits**";
+            }                         
+           </script>
+           <script>
+            function onlyNumberKey(evt)
+            {
+            var ASCIICode=evt.keyCode;
+            if (ASCIICode < 48 || ASCIICode > 57)
+            {return false;}
+            return true;
+            }
+            function onlyAlphaKey(evt)
+            {
+            var ASCIICode=evt.keyCode;
+            if ((ASCIICode >= 65 && ASCIICode <= 90) || (ASCIICode >= 97 && ASCIICode <= 122) || (ASCIICode==32))
+            {return true;}
+            return false;
+            }
+           </script>
+           <script>
+            function reload(){
+                window.location.reload();
+            }
+           </script>
+    </head>
+    <body >
+        <div id="wrap">
+            <div id="top">
+                <a href="mainPage.html"><img src="LOGO.PNG" height="100px" width="100px" style="border:0px; text-decoration:none;"></a>
+                <a href="mainPage.html"><img src="LOGO_name.PNG" height="100px" width="300px" style="border:0px; text-decoration:none;"></a>
+                
+                <div id="display_user" style="float:right;">
+                    <p id="welcome_user" style="margin-top:85px;margin-right:50px;"></p>
+                </div>
+            </div>
+            <div id="nav" style="height: 50px;">
+                <div id="nav_bar" style="margin-top: 10px;">
+                    <ul>
+                        <li><a href="mainPage.html">&nbsp;Home&nbsp;</a></li>
+                        <li><a href="#">&nbsp;Services&nbsp;</a>
+                            <ul id="sub_menu_services">
+                                <li><a href="user.html">&nbsp;Account&nbsp;</a></li>
+                                <li><a href="new_transferfinal_web.html">&nbsp;Trasactions&nbsp;</a></li>
+                                <li><a href="new_billfinal_web.html">&nbsp;Bill Payment&nbsp;</a></li>
+                                <li><a href="loan form.html">&nbsp;Loans&nbsp;</a></li>
+                            </ul>
+                        </li>
+                        
+                       
+
+                    </ul>
+                </div>
+                <div id="general_info" style="margin-top: 10px;">
+                    <ul>
+                        <li><a href="faq.html">&nbsp;FAQ&nbsp;</a></li>
+                        <li style="color:black;">|</li>
+                        <li><a href="customer_care.html">&nbsp;Customer Care&nbsp;</a></li>
+                        <li style="color:black;">|</li>
+                        <li><a href="about.html">&nbsp;About&nbsp;</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        
+        <div name="n" id="n"><form method ="post" action="userdetail.php"  onsubmit="return validateForm()">
+        <table  cellpadding="9" align="center"><tr><h1><center>UPDATE USER DETAILS</center> </h1></tr><tr></tr>
+            <tr><td><label>Customer ID<a style="color:red;"> *</a>     :</label></td><td><input type ="text"  id="login" name="customerid"  ><span  id="unamee" style="color: red; font-size: 18px;"></span></td></tr>
+            <tr><td><label>Account ID<a style="color:red;"> *</a>     :</label></td><td><input type ="text"  id="alogin" name="accountid"  ><span  id="anamee" style="color: red; font-size: 18px;"></span></td></tr>
+            <tr><td><label>UserLogin ID<a style="color:red;"> *</a>     :</label></td><td><input type ="text"  id="ulogin" name="userloginid"  ><span  id="ulnamee" style="color: red; font-size: 18px;"></span></td></tr>
+        <tr><td><label>FirstName<a style="color:red;"> *</a>     :</label></td><td><input type ="text"  id="fname" name="fname" onkeypress="return onlyAlphaKey(event)" ><span  id="fnamee" style="color: red; font-size: 18px;"></span></td></tr>
+        <tr><td><label>LastName<a style="color:red;"> *</a>     :</label></td><td><input type ="text"  id="lname" name="lname"  onkeypress="return onlyAlphaKey(event)" ><span  id="lnamee" style="color: red; font-size: 18px;"></span></td></tr>
+        <tr><td><label>Gender<a style="color:red;"> *</a>     :</label></td><td><input type ="text"  id="glogin" name="gender"  ><span  id="gen" style="color: red; font-size: 18px;"></span></td></tr>
+        <tr><td><label>Email<a style="color:red;"> *</a>          :</label></td><td><input type="text" id="email"  name="email"><span   style="color: red;font-size: 18px;"></span></td></tr>
+        <tr><td><label>Phone<a style="color:red;"> *</a>      :</label></td><td><input type ="text"  id="pno" name="pno" onkeypress="return onlyNumberKey(event)" ><span  id="pnoe" style="color: red; font-size: 18px;"></span></td></tr>
+        <tr><td><label>DOB<a style="color:red;"> *</a>      :</label></td><td><input type ="date"  id="dob" name="dob" ><span  id="dobe" style="color: red; font-size: 18px;"></span></td></tr>
+      
+        <tr><td><label>Address<a style="color:red;"> *</a>   :</label></td><td><input type ="text" id="name"  name="address"></td></tr>
+        <tr><td><label>Zip code<a style="color:red;"> *</a> :</label></td><td><input type ="text"  id="pino"  name="zipcode" onkeypress="return onlyNumberKey(event)" ><span  id="pinoo" style="color: red; font-size: 18px;"></span></td></tr>
+        <tr><td><label><input type="submit" id="submit" name="Submit" value="Update"  /></label></td>
+        <td><input type="button" id="clear" name="Clear" value="Cancel"  onclick="reload()"/></td></tr>
+        </table></div> 
+                </form>
+            </div>
+            
+    </body>
+    
+</html>

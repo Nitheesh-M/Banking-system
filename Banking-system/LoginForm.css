@@ -1,0 +1,81 @@
+
+
+.login-form{
+    width: 450px;
+    background-color: white;
+    box-shadow: 0px 5px 10px black;
+}
+.login-form h2{
+    text-align: center;
+    background-color: #204969;
+    padding: 12px 0px;
+
+}
+.login-form form{
+    padding: 30px 60px;
+}
+.login-form form div.input-field{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
+}
+.login-form form .input-field i{
+    color: darkslategray;
+    padding: 10px 14px;
+    background-color: #f2f4f6;              /*icon bg color */
+    margin-right: 4px;
+}
+.login-form form .input-field input{
+    background-color: #f2f4f6;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    padding-left: 15px;
+}
+.login-form form button{
+    width: 100%;
+    background-color: #5bd1d7;
+    padding: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    margin: 15px 0;
+    transition: background-color 0.4s;
+}
+.login-form form button:hover{
+    background-color: #41b6e6;
+}
+.login-form form .extra{
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.login-form form div.extra a:first-child{
+    color: darkgrey;
+}
+.login-form form div.extra a:last-child{
+    color:gray;
+}
+#login_error{
+    display: none;
+    background-color: #ff5f5f;           /*error box color */
+    padding: 3px;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    animation-name: show_login_error;
+    animation-duration: 0.6s;
+
+}
+
+@keyframes show_login_error{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" type="text/css" href="mainPage.css">
+        <link rel="stylesheet" type="text/css" href="nav_logo.css">
+        <link rel="stylesheet" type="text/css" href="LoginForm.css">
+    </head>
+    <body style="background: url(https://cdn.discordapp.com/attachments/862331232409878548/917849375907147846/shapelined-_JBKdviweXI-unsplash.jpg); background-size: 100%;">
+    
+    </style>
+        <div id="wrap">
+            <div id="top">
+                <a href="#"><img src="LOGO.PNG" height="100px" width="100px" style="border:0px; text-decoration:none;"></a>
+                <a href="#"><img src="LOGO_name.PNG" height="100px" width="300px" style="border:0px; text-decoration:none;"></a>
+                
+                <div id="display_user" style="float:right;">
+                    <p id="welcome_user" style="margin-top:85px;margin-right:50px;"></p>
+                </div>
+            </div>
+            <div id="nav" style="height: 50px;">
+                <div id="nav_bar" style="margin-top: 10px;">
+                    <ul>
+                        <li><a href="#">&nbsp;Home&nbsp;</a></li>
+                        <li><a href="#">&nbsp;Services&nbsp;</a>
+                            <ul id="sub_menu_services">
+                                <li><a href="user.html">&nbsp;Account&nbsp;</a></li>
+                                <li><a href="new_transferfinal_web.html">&nbsp;Trasactions&nbsp;</a></li>
+                                <li><a href="new_billfinal_web.html">&nbsp;Bill Payment&nbsp;</a></li>
+                                <li><a href="loan form.html">&nbsp;Loans&nbsp;</a></li>
+                            </ul>
+                        </li>
+                        
+                      
+
+                    </ul>
+                </div>
+                <div id="general_info" style="margin-top: 10px;">
+                    <ul>
+                        <li><a href="faq.html">&nbsp;FAQ&nbsp;</a></li>
+                        <li style="color:black;">|</li>
+                        <li><a href="customer_care.html">&nbsp;Customer Care&nbsp;</a></li>
+                        <li style="color:black;">|</li>
+                        <li><a href="about.html">&nbsp;About&nbsp;</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+       <br><br><br><br><br><br>
+       
+       <center>
+        <div class="login-form" >
+            <h2>USER LOGIN</h2>
+            <form method="post" name="login_form" action="trialLogin.php"  onsubmit="return validation()" >
+                <div class="input-field">
+                    <i class ="fas fa-user"></i>
+                    <input type="text" placeholder="User Login ID" name="userloginid"> 
+                    </div>
+                    <div class="input-field">
+                    <i class ="fas fa-user"></i>
+                    <input type="text" placeholder="Username" name="username">
+        
+                </div>
+            
+                <div class="input-field">
+                    <i class ="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" name="password">
+                </div>
+                
+                <div id="login_error"></div>
+
+                <button type="submit">Sign In</button>
+                
+                <div class="extra">
+                   <a href="#">Forgot Password?</a>
+                   <a href="trialRegister.html">Create an Account</a>
+                </div>
+            </form>
+        </div>
+    </center>
+        <script>
+            function validation()
+            {
+                let username=document.forms['login_form']['username'];
+                let userpass=document.forms['login_form']['userpass'];
+                let login_error=document.getElementById('login_error');
+                
+                if(username.value=='' && userpass.value=='')
+                {
+                    login_error.innerHTML="Fields are empty.";
+                    login_error.style.display="block";
+                    return false;
+                }
+                if(username.value=='')
+                {
+                    login_error.innerHTML="Username Field is Empty";
+                    login_error.style.display="block";
+                    return false;
+                }
+                if(userpass.value=='')
+                {
+                    login_error.innerHTML="Enter the Password!";
+                    login_error.style.display="block";
+                    return false;
+                }
+
+             return true;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,172 @@
+a{
+    text-decoration: none; 
+  }
+  h1{
+    color: #FF9800;
+  }
+  #wrapper { 
+    width: 300px;
+    margin: 0 auto; 
+    overflow: auto;
+    background-color: #0a388d;
+    border-radius: 1px;
+    box-shadow: 5px 5px 20px;
+  }
+
+
+  #my-info{
+    margin: 50px; 
+    font-family: Sans-Serif; 
+    color: white; 
+    line-height: 150%; 
+  }   
+  
+  #my-info h2{
+    text-transform: uppercase; 
+    text-align: center; 
+  }
+  
+  #see-more{
+    width: 200px;
+    height: 50px;
+    overflow: auto;
+    
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 50px;
+    
+    background-color: black;
+    border-radius: 20px;
+    text-transform: uppercase;
+    
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    
+    transition: 0.2s ease-out;
+  }
+  
+  #see-more:hover{
+    color: black; 
+    background-color: white; 
+  }
+  
+  .info-card{
+    background-color: #7E8AA2; 
+    font-family: Sans-Serif; 
+    color: white; 
+    line-height: 150%;
+  }
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --card-color: #cacaca;
+  --text-color: #e1e1e1;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+
+
+
+
+.container {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 680px;
+}
+  .col1 {
+    perspective: 1000;
+    transform-style: preserve-3d;
+  }
+  .type {
+    position: absolute;
+    width: 75px;
+    height: 45px;
+    top: 20px;
+    right: 20px;
+  }
+
+  .col2 input {
+ 
+      display: block;
+      width: 260px;
+      height: 30px;
+      padding-left: 10px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      margin: 7px;
+      font-size: 17px;
+      border-radius: 20px;
+      background: rgba(0, 0, 0, 0.05);
+      border: none;
+      transition: background 0.5s;
+  }
+
+    label {
+      padding-left: 8px;
+      font-size: 15px;
+      color: #444;
+    }
+
+    .ccv {
+      width: 40%;
+    }
+    .bill {
+      width: 40%;
+    }
+    .buy {
+      width: 260px;
+      height: 50px;
+      position: relative;
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+      border: none;
+      background: #42c2df;
+      color: white;
+      font-size: 20px;
+      transition: background 0.4s;
+      cursor: pointer;
+    }
+      i {
+        font-size: 20px;
+      }
+
+      .buy:hover {
+              background: #3594a9;
+              transition: background 0.4s;
+      }
+
+  .chip {
+    position: absolute;
+    width: 55px;
+    height: 40px;
+    background: #bbb;
+    border-radius: 7px;
+  }
+.chip::after{
+      background: #3594a9;
+      transition: background 0.4s;
+    
+}
+
+#border {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 50%;
+  background-color: rgb(196, 212, 243);
+}

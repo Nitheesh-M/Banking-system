@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" type="text/css" href="new_mainPage_style.css">
+        <link rel="stylesheet" type="text/css" href="new_nav.logo_style.css">
+        <link rel="stylesheet" type="text/css" href="new_transferteja_style.css">
+    </head>
+    <body style="background: url(https://cdn.discordapp.com/attachments/862331232409878548/917849375907147846/shapelined-_JBKdviweXI-unsplash.jpg); background-size: 100%;">
+    
+    </style>
+        <div id="wrap">
+            <div id="top">
+                <a href="#"><img src="LOGO.PNG" height="100px" width="100px" style="border:0px; text-decoration:none;"></a>
+                <a href="#"><img src="LOGO_name.PNG" height="100px" width="300px" style="border:0px; text-decoration:none;"></a>
+                
+                <div id="display_user" style="float:right;">
+                    <p id="welcome_user" style="margin-top:85px;margin-right:50px;"></p>
+                </div>
+            </div>
+            <div id="nav" style="height: 50px;">
+                <div id="nav_bar" style="margin-top: 10px;">
+                    <ul>
+                        <li><a href="mainPage.html">&nbsp;Home&nbsp;</a></li>
+                        <li><a href="#">&nbsp;Services&nbsp;</a>
+                            <ul id="sub_menu_services">
+                                <li><a href="user.html">&nbsp;Account&nbsp;</a></li>
+                                <li><a href="new_transferfinal_web.html">&nbsp;Trasactions&nbsp;</a></li>
+                                <li><a href="new_billfinal_web.html">&nbsp;Bill Payment&nbsp;</a></li>
+                                <li><a href="loan form.html">&nbsp;Loans&nbsp;</a></li>
+                            </ul>
+                        </li>
+                        
+                       
+
+                    </ul>
+                </div>
+                <div id="general_info" style="margin-top: 10px;">
+                    <ul>
+                        <li><a href="faq.html">&nbsp;FAQ&nbsp;</a></li>
+                        <li style="color:black;">|</li>
+                        <li><a href="customer_care.html">&nbsp;Customer Care&nbsp;</a></li>
+                        <li style="color:black;">|</li>
+                        <li><a href="about.html">&nbsp;About&nbsp;</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+       <br><br><br>
+       <h3 style="text-align: center;"></h3>
+       <table  style="border: solid 1px #24231d; background-color:rgb(159, 159, 160);" align="center">
+        <tr>
+            <td>
+    <div class="signup" >
+                 <form method ="post" ID="signup" action="new_transferfinal_web.php" onsubmit="return validateForm()">
+                            <table cellpadding="9"><tr></tr><tr><center><h2></h2></center></tr>        
+                            <div class="f"> 
+                                <tr><td><label>Sender account number<a style=color:red;> *</a>        :</label></td><td><input type ="text" name ="senderno" id="senderno" placeholder="enter your Sender account number " required ></td></tr></div>
+                            <tr><td><label>Reciever account number<a style=color:red;> *</a>        :</label></td><td><input type ="text" name ="receiverno" id="receiverno" placeholder="enter your receiver account number " required ></td></tr></div>
+                            <tr><td><label>Reciever name <a style=color:red;> *</a>         :</label></td><td><input type ="text" name ="receivername" id="receivername" placeholder="enter your receiver account name " required></td></tr>
+                            <tr><td><label>Amount<a style=color:red;> *</a>      :</label></td><td><input type ="text" name ="amount" id="amount" placeholder="enter amount" required></td></tr>
+                            <tr><td><label><input type="submit" id="submit" name="pay" value="Submit"  /></label></td>
+                            <td><input type="button" id="clear" name="Clear" value="clear" /></td></tr>
+                            </table>
+            </form>
+        
+    </body>
+</html>

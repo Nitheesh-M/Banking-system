@@ -1,0 +1,128 @@
+*{
+    margin=0:
+    padding=0;
+}
+body{
+    background-color: rgb(213, 214, 216) ;
+    background-size: cover;
+    background-position: 0px 0px;
+}
+div.top{
+    width :1070px;
+    height: 35px;
+    margin-top :70px;
+    background-color:rgb(244, 244, 244);
+    font-weight: bold;
+    font-size: 22px;
+    padding-top: 15px;
+    padding-left: 30px;
+    border-style: groove;
+    border-width: 0.001cm;
+    color: red;
+    border-radius : 0px ;
+}
+div.down{
+    width :1100px;
+    height:460px;
+    margin: auto;
+    margin-top: 25px;
+    background-color:rgb(255,255, 255);
+    border-radius : 0px ;
+    border : 1px solid rgpa(255,255,255,0.3);
+    color: white;
+    border-style: groove;
+    border-width: 0.001cm;
+}
+
+div.dtop{
+    width :1070px;
+    height: 40px;
+    background-color:rgb(248, 248, 248);
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 30px;
+    color: black;
+    border-radius : 0px ;
+    padding-top: 15px;
+    border-style: groove;
+    border-width: 0.001cm;
+}
+div.dmid{
+    width :800px;
+    height: 80px;
+    
+    margin-top : 30px;
+    border-spacing: 1px;
+    background-color:rgb(245,245,245);
+    font-size: 10px;
+    border-radius : 0px ;
+    border : 1px solid rgpa(255,255,255,0.3);
+    color: rgb(10, 10, 10);
+    font-size: 17px;
+    padding-top: 5px;
+    border-style: groove;
+    border-width: 0.001cm;
+}
+div.ddt{
+    width :800px;
+    height: 30px;
+    margin-top : 30px;
+    border-spacing: 1px;
+    background-color:rgb(245,245,245);
+    font-size: 10px;
+    border-radius : 0px ;
+    border : 1px solid rgpa(255,255,255,0.3);
+    color: rgb(10, 10, 10);
+    font-size: 17px;
+    font-weight: bold;
+    padding-top: 10px;
+    border-style: groove;
+    border-width: 0.001cm;
+}
+div.ddd{
+    width :800px;
+    height: 150px;
+    border-style: groove;
+    border-width: 0.001cm;
+    background-color:white;
+    font-size: 10px;
+    border-radius : 0px ;
+    border : 1px solid rgpa(255,255,255,0.3);
+    color: rgb(10, 10, 10);
+    font-size: 17px;
+
+}
+form#signup{
+    margin: 60px;
+    
+}
+label{
+    font-family: sans-serif;
+    color:  white;
+    font-style: bold;
+    font-size: 18px;
+}
+input#name{
+   width: 300px;
+   border-radius: 3px;
+   outline: 0;
+   padding: 7px;
+   background-color: #fff;
+   box-shadow: inset 1px 1px 5px rgba (0,0,0,0.3);
+}
+input#submit{
+    width: 200px;
+    padding: 7px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 600;
+    border-radius: 3px;
+    background-color: rgba(250,100,0,0.8);
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid rgba(255,255,255,0.3);
+    box box-shadow: 1px 1px 5px rgba (0,0,0,0.6);
+    margin-bottom : 20px;
+}
+

@@ -1,0 +1,34 @@
+<?php
+echo '<!DOCTYPE html>';
+echo '<html lang="en">';
+echo '<head>';
+echo '<title>Bootstrap Example</title>';
+echo '<meta charset="utf-8">';
+echo '<meta name="viewport" content="width=device-width, initial-scale=1">';
+echo '<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">';
+echo '<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>';
+echo '</head>';
+echo '<body>';
+echo '';
+echo '<div class="container mt-3">';
+echo '<h2>Input Group Size</h2>';
+echo '<p>Use the .input-group-sm class for small input groups and .input-group-lg for large inputs groups:</p>';
+echo '';
+echo '<div class="input-group input-group-sm mb-3">';
+echo '<span class="input-group-text">Small</span>';
+echo '<input type="text" class="form-control">';
+echo '</div>';
+echo '<div class="input-group mb-3">';
+echo '<span class="input-group-text">Default</span>';
+echo '<input type="text" class="form-control">';
+echo '</div>';
+echo '<div class="input-group input-group-lg mb-3">';
+echo '<span class="input-group-text">Large</span>';
+echo '<input type="text" class="form-control">';
+echo '</div>';
+echo '</div>';
+echo '';
+echo '</body>';
+echo '</html>';
+echo '';
+?>
